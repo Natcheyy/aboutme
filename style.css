@@ -1,0 +1,23 @@
+/* * div {
+    outline: 2px solid black;
+} */
+
+div {
+    padding: 1px;
+    border: solid black;
+    margin: 5px;
+    flex: 1;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: gainsboro; */
+    /* Element with the display: flex on it so flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    color: blueviolet
+}

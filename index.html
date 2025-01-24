@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
+    <link rel="stylesheet" href="style.css">
 
-        /* * div {
-            outline: 2px solid black;
-        } */
-
-        div {
-            padding: 1px;
-            border: solid black;
-            margin: 5px;
-        }
-
-        body {
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            background-color: gainsboro;
-        }
-    </style>
+    <script defer src="script.js"></script>
+    
 </head>
 <body>
-    <img src="measdog.jpeg" alt="My dog picture" height="300" width="300">
+
+    <label for="theme">Choose a theme</label>
+    <select name="theme" id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+
 
     <h1>About Natch</h1>
+
+    <div class="mainimage">
+        <img src="measdog.jpeg" alt="My dog picture" height="300" width="300">
+    </div>
+    
 
     <div class="Biography">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita itaque, error impedit pariatur perspiciatis aliquid cupiditate reprehenderit tenetur voluptatem est quae saepe molestias, eius omnis, adipisci tempora numquam similique.</p>
@@ -55,8 +53,20 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/25m3Gk7mRQM?si=ieTuu8eFV79-zoT1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    
-    
+
+    <div class ="mySelect">
+        <h2>This is a Select in HTML</h2>
+        <label for="season">Select your favorite season: </label>
+
+        <select name="season" id="season">
+            <option value="">--Make a choice--</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Autumn">Autumn</option>
+            <option value="Winter">Winter</option>
+        </select>
+        <p id="selectOutput"></p>
+    </div>    
     
 </body>
 </html>
